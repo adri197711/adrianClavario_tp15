@@ -1,5 +1,4 @@
 const fs = require('fs');
-
 const peliculas = require('./peliculas.js');
 
 function mostrarPeliculas(array){
@@ -10,7 +9,7 @@ let element = "";
   return element;
 }
 
-console.log(mostrarPeliculas(peliculas));
+mostrarPeliculas(peliculas);
 
 
 const texto = fs.readFileSync('./mensaje.txt', 'utf8');
